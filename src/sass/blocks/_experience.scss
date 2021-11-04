@@ -1,0 +1,30 @@
+.experience {
+    .divider {
+        margin: 0;
+    }
+    &__text {
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 21px;
+        color: #000000;
+    }
+    &__wrapper {
+        margin-left: 70px;
+    }
+    &__info {
+        margin-top: 6px;
+        font-weight: 500;
+        font-size: 12px;
+        line-height: 18px;
+        color: #000000;
+    }
+    &__icon {
+        margin-top: 10px;
+        display: block;
+        position: absolute;
+        padding-left: 15px;
+        padding-top: 8px;
+        z-index: 2;
+        @include before_circle;
+    }
+}

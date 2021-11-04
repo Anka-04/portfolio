@@ -1,0 +1,49 @@
+.graphics {
+    margin-top: 100px;
+    &__block {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(2, 75px);
+        column-gap: 45px;
+    }
+    &__element {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+    }
+    &__info {
+        position: relative;
+        padding-left: 12px;
+        z-index: 2;
+        @include before_circle;
+    }
+    &__digit {
+        font-weight: 500;
+        display: grid;
+        justify-content: flex-end;
+    }
+    &__line {
+        display: grid;
+        width: 350px;
+        height: 14px;
+        border-radius: 4px;
+        grid-column-start: 1;
+        grid-column-end: 3;
+    }
+    &__yellow {
+        background-color: $main-color;
+        border-radius: 4px;
+        width: 350px;
+        height: 14px;
+        z-index: 2;
+        position: relative;
+    }
+    &__grey {
+        background-color: #E8E4DE;
+        border-radius: 4px;
+        width: 350px;
+        height: 14px;
+        z-index: 1;
+        position: absolute;
+    }
+}
